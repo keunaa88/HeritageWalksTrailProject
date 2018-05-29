@@ -13,7 +13,6 @@ class Admin extends AbstractMigration
     public function change()
     {
         $table = $this->table('admin');
-
         $table->addColumn('adminId', 'string', [
             'default' => null,
             'limit' => 50,
