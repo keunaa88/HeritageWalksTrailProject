@@ -11,6 +11,7 @@
  * @link          https://cakephp.org CakePHP(tm) Project
  * @since         0.10.0
  * @license       https://opensource.org/licenses/mit-license.php MIT License
+
  */
 
 $cakeDescription = 'CakePHP: the rapid development php framework';
@@ -28,6 +29,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('style.css') ?>
+    <?= $this->Html->css('custom.css') ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -36,9 +38,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 <body>
     <nav class="top-bar expanded" data-topbar role="navigation">
         <ul class="title-area large-3 medium-4 columns">
-            <li class="name">
-                <h1><a href=""><?= $this->fetch('title') ?></a></h1>
-            </li>
+        <?php /* <li class="name">
+           <h1><a href=""><?= $this->fetch('title') ?></a></h1> </li> */ ?>
+            <li class="heading"><?= $this->Html->image('logo.png') ?></li>
         </ul>
         <div class="top-bar-section">
             <ul class="right">
